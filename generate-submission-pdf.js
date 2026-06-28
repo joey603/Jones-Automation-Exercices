@@ -19,6 +19,7 @@ const automationScreenshotUrl = imageToDataUri(
 );
 
 const outputPath = join(currentDir, "Jones-Automation-Exercise-Yoeli-Barthel.pdf");
+const githubRepoUrl = "https://github.com/joey603/Jones-Automation-Exercices";
 
 const html = `<!doctype html>
 <html lang="en">
@@ -68,9 +69,13 @@ const html = `<!doctype html>
       margin: 4px 0;
     }
 
-    .todo-link {
-      color: #b45309;
-      font-weight: 700;
+    a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #1d4ed8;
     }
 
     .note {
@@ -139,7 +144,7 @@ const html = `<!doctype html>
 
   <div class="meta">
     <p><strong>Candidate:</strong> Yoeli Barthel</p>
-    <p><strong>GitHub repository:</strong> <span class="todo-link">TODO: add GitHub repository link here</span></p>
+    <p><strong>GitHub repository:</strong> <a href="${githubRepoUrl}">${githubRepoUrl}</a></p>
     <p><strong>Automation target:</strong> https://test.netlify.app/</p>
     <p><strong>Main automation file:</strong> <code>automation.js</code></p>
     <p><strong>QA answers file:</strong> <code>qa-responses.md</code></p>
@@ -169,7 +174,7 @@ const html = `<!doctype html>
   </ol>
 
   <h2>2. Setup and Run Instructions</h2>
-  <p>From the <code>jones-automation</code> folder:</p>
+  <p>From the <code>Jones-Automation-Exercices</code> folder:</p>
   <pre>npm install
 npx playwright install chromium
 npm start</pre>

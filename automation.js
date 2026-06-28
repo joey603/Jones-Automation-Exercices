@@ -3,10 +3,10 @@
  *
  * Run:
  *   npm run jones
- *   node jones-automation/automation.js
+ *   node automation.js
  *
  * Screenshot output:
- *   jones-automation/screenshots/jones-form-before-submit.png
+ *   screenshots/jones-form-before-submit.png
  */
 
 // Import Chromium from Playwright (browser engine similar to Chrome).
@@ -16,7 +16,7 @@ import { mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-// Build an absolute path to jones-automation/screenshots/.
+// Build an absolute path to screenshots/.
 const automationDir = dirname(fileURLToPath(import.meta.url));
 const screenshotDir = join(automationDir, "screenshots");
 const screenshotPath = join(screenshotDir, "jones-form-before-submit.png");

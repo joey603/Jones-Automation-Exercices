@@ -14,13 +14,13 @@ This submission contains two parts:
 ## Deliverables
 
 ```text
-jones-automation/
+Jones-Automation-Exercices/
   automation.js
   qa-responses.md
-  screenshots/
-    jones-form-before-submit.png
   package.json
   README.md
+  screenshots/                 (created when you run the script)
+    jones-form-before-submit.png
 ```
 
 ## Requirements
@@ -31,9 +31,10 @@ jones-automation/
 
 ## Installation
 
-From the `jones-automation` folder, run:
+After cloning the repository, go into the project folder and run:
 
 ```bash
+cd Jones-Automation-Exercices
 npm install
 npx playwright install chromium
 ```
@@ -69,7 +70,7 @@ Reached thank you page
 
 ## Screenshot Before Submit
 
-The screenshot is generated here:
+The screenshot is generated locally when you run the automation:
 
 ```text
 screenshots/jones-form-before-submit.png
@@ -77,9 +78,9 @@ screenshots/jones-form-before-submit.png
 
 It is taken before clicking the `Request a call back` button, as requested in the exercise.
 
-<p align="center">
-  <img src="./screenshots/jones-form-before-submit.png" alt="Jones form before submit" width="800">
-</p>
+The PNG file is not committed to the repository on purpose. This way, anyone reviewing the project can run the script and confirm that the screenshot is created by the automation, not copied from a file already present in the repo.
+
+After running `npm start`, open the generated file above to see the result.
 
 ## QA Responses
 
